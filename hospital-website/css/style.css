@@ -79,6 +79,18 @@ a {
     display: none;
 }
 
+#home{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%; 
+}
+
+#home .right-text{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
 
 /* media queries */
 
@@ -100,6 +112,13 @@ a {
         transform-origin: top right;
         transition: none;
     }
+
+    .header #navigation.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+
     .header #navigation a{
         font-size: 2rem;
         display: block;
