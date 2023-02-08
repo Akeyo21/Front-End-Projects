@@ -152,21 +152,19 @@ section{
 
 #icons{
     width:100%;
-    display:flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
 }
 
 .icons-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     border: var(--border);
-    flex:1 1 50rem;
     padding: 2rem;
     border-radius: 4px;
+    box-shadow: var(--box-shadow);
 }
 
 .icons-section i{
@@ -181,6 +179,12 @@ section{
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
 }
+
+.icons-section p{
+    color: var(--light-color)
+}
+
+
 /* media queries */
 
 @media(max-width: 768px){
