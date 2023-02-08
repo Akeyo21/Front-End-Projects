@@ -121,7 +121,7 @@ section{
     margin-bottom: 2rem;
 }
 
-#home .right-text button{
+#home .right-text button, .service button{
     background: #fff;
     color: var(--green);
     border:var(--border);
@@ -132,19 +132,19 @@ section{
     cursor: pointer;
 }
 
-#home .right-text button i{
+#home .right-text button i, .service button i{
     background: var(--green);
     color: #fff;
     padding:0.5rem;
     border-radius: 4px;
 }
 
-#home .right-text button:hover i{
+#home .right-text button:hover i, .service button:hover i{
     background: #fff;
     color: var(--green)
 }
 
-#home .right-text button:hover{
+#home .right-text button:hover, .service button:hover{
     background: var(--green);
     color:#fff;
     margin-left:1rem;
@@ -169,7 +169,7 @@ section{
 
 .icons-section i{
     color: var(--green);
-    font-size: 2.5rem;
+    font-size: 4.5rem;
 }
 
 .icons-section h6{
@@ -180,8 +180,38 @@ section{
         margin-bottom: 0.5rem;
 }
 
-.icons-section p{
+.icons-section p, .service p{
     color: var(--light-color)
+}
+
+#services-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.service{
+    padding:2rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+.service i{
+    color: var(--green);
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.service h3{
+    text-shadow: var(--text-shadow);
+    color: var(--black);
+        line-height: 1.8;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+}
+
+.service p{
+    margin-bottom: 1rem;
 }
 
 
