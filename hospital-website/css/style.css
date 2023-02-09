@@ -121,7 +121,7 @@ section{
     margin-bottom: 2rem;
 }
 
-#home .right-text button, .service button{
+.btn{
     background: #fff;
     color: var(--green);
     border:var(--border);
@@ -132,19 +132,19 @@ section{
     cursor: pointer;
 }
 
-#home .right-text button i, .service button i{
+.btn i{
     background: var(--green);
     color: #fff;
     padding:0.5rem;
     border-radius: 4px;
 }
 
-#home .right-text button:hover i, .service button:hover i{
+.btn:hover i{
     background: #fff;
     color: var(--green)
 }
 
-#home .right-text button:hover, .service button:hover{
+.btn:hover{
     background: var(--green);
     color:#fff;
     margin-left:1rem;
@@ -214,14 +214,14 @@ section{
     margin-bottom: 1rem;
 }
 
-#services-container .heading{
+.heading{
    text-align: center;
    font-size: 4.5rem;
    text-transform: uppercase;
    text-shadow: var(--text-shadow);
 }
 
-#services-container .heading span{
+.heading span{
    text-transform: uppercase;
    color:var(--green)
 }
