@@ -198,13 +198,13 @@ section{
     color: var(--light-color)
 }
 
-#services-container .box{
+.box{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
 }
 
-.service{
+.service, .doctor-section{
     padding:2rem;
     border: var(--border);
     box-shadow: var(--box-shadow);
@@ -226,6 +226,15 @@ section{
 
 .service p{
     margin-bottom: 1rem;
+}
+
+.doctor-section{
+    text-align: center;
+    
+}
+
+.doctor-section img{
+    width: 50%;
 }
 
 
