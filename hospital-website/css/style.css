@@ -36,6 +36,47 @@ a {
     text-decoration: none;
 }
 
+.btn{
+    background: #fff;
+    color: var(--green);
+    border:var(--border);
+    width: fit-content;
+    padding: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn i{
+    background: var(--green);
+    color: #fff;
+    padding:0.5rem;
+    border-radius: 4px;
+}
+
+.btn:hover i{
+    background: #fff;
+    color: var(--green)
+}
+
+.btn:hover{
+    background: var(--green);
+    color:#fff;
+    margin-left:1rem;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+ }
+ 
+ .heading span{
+    text-transform: uppercase;
+    color:var(--green)
+ }
+
 .header {
     display: flex;
     align-items: center;
@@ -82,23 +123,25 @@ a {
 section{
     padding: 2rem 9%;
 }
-
 #home{
+    padding-top: 10rem;
+}
+
+#home, #about-us{
     display: flex;
     background: #fff;
-    padding-top: 10rem;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
 
-#home .img{
+.img{
     flex:1 1 45rem;
     width: 100%;
 }
 
-#home .right-text{
+.right-text{
     flex:1 1 45rem;
     display: flex;
     flex-direction: column;
@@ -106,7 +149,7 @@ section{
 }
 
 
-#home .right-text h3{
+.right-text h3{
     text-shadow: var(--text-shadow);
     color: var(--black);
     line-height: 1.8;
@@ -114,40 +157,11 @@ section{
     margin-bottom: 2rem;
 }
 
-#home .right-text h5{
+.right-text h5{
     color:var(--light-color);
     opacity: 0.6;
     font-size: 1.7rem;
     margin-bottom: 2rem;
-}
-
-.btn{
-    background: #fff;
-    color: var(--green);
-    border:var(--border);
-    width: fit-content;
-    padding: 0.5rem;
-    box-shadow: var(--box-shadow);
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn i{
-    background: var(--green);
-    color: #fff;
-    padding:0.5rem;
-    border-radius: 4px;
-}
-
-.btn:hover i{
-    background: #fff;
-    color: var(--green)
-}
-
-.btn:hover{
-    background: var(--green);
-    color:#fff;
-    margin-left:1rem;
 }
 
 #icons{
@@ -184,7 +198,7 @@ section{
     color: var(--light-color)
 }
 
-#services-container{
+#services-container .box{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
@@ -212,18 +226,6 @@ section{
 
 .service p{
     margin-bottom: 1rem;
-}
-
-.heading{
-   text-align: center;
-   font-size: 4.5rem;
-   text-transform: uppercase;
-   text-shadow: var(--text-shadow);
-}
-
-.heading span{
-   text-transform: uppercase;
-   color:var(--green)
 }
 
 
