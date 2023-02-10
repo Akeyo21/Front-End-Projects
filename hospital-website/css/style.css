@@ -308,6 +308,26 @@ section{
     color:#fff;
     background-color: var(--green);
 }
+#reviews-section .review{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#reviews-section .review .review-img-section{
+    background-color: var(--green);
+    color: #fff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 2rem;
+}
+#reviews-section .review .review-img-section img{
+    width: 30%;
+    border: solid #fff 1rem;
+    border-radius: 50%;
+}
+
+
 
 
 /* media queries */
