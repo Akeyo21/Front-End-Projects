@@ -7,7 +7,8 @@
     --light-color: #777;
     --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
     --text-shadow: .4rem .4rem 0 rgba(0,0,133,.2);
-    --border: .2rem solid var(--green)
+    --border: .2rem solid var(--green);
+    --border-radius: 5px
 }
 * {
     font-family: 'Poppins', sans-serif;
@@ -235,6 +236,17 @@ section{
 
 .doctor-section img{
     width: 50%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.doctor-section h3{
+    font-size: 3rem;
+}
+
+.doctor-section p{
+    color: var(--green);
+    font-size: 1.5rem;
 }
 
 
