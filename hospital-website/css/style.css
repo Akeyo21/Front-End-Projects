@@ -247,6 +247,22 @@ section{
 .doctor-section p{
     color: var(--green);
     font-size: 1.5rem;
+    margin-bottom:2rem;
+}
+
+.doctor-section i{
+    color:var(--green);
+    border: var(--border);
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: var(--border-radius);
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.doctor-section i:hover{
+    color: #fff;
+    background-color: var(--green);
 }
 
 
