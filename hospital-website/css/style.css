@@ -128,7 +128,7 @@ section{
     padding-top: 10rem;
 }
 
-#home, #about-us{
+#home, #about-us,#book-section {
     display: flex;
     background: #fff;
     align-items: center;
@@ -265,6 +265,49 @@ section{
     background-color: var(--green);
 }
 
+
+#book-section .right-text{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    align-items: center;
+}
+
+#book-section .right-text h4{
+    font-size: 2rem;
+    text-shadow: var(--text-shadow);
+    color:var(--black)
+}
+
+#book-section .right-text input{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin:0.6rem;
+    width:100%;
+    padding: 1rem;
+    text-transform: lowercase;
+    color:var(--light-color)
+
+}
+
+#book-section .right-text button{
+    color:var(--green);
+    width:fit-content;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+#book-section .right-text button:hover{
+    color:#fff;
+    background-color: var(--green);
+}
 
 
 /* media queries */
