@@ -336,6 +336,47 @@ section{
     margin-top: 2rem;
 }
 
+.blog-section{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.blog-section img{
+    width: 100%;
+    flex:1;
+}
+.blog-section .icons{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-section .icons i{
+    color: var(--green);
+    margin: 0.5rem;
+}
+.blog-section .icons{
+    font-size: 1rem;
+}
+.blog-section .icons .icon-text{
+    color: var(--light-color)
+}
+.blog-section h3{
+    font-size: 2rem;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+}
+.blog-section p{
+    color: var(--light-color);
+    font-size: 1.2rem;
+    margin-bottom:1.5rem
+}
+.blog-section:hover{
+    
+}
+
 
 
 
