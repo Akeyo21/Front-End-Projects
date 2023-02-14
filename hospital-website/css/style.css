@@ -356,6 +356,7 @@ section{
     margin: 0.5rem;
 }
 .blog-section .icons{
+    margin-top:1rem;
     font-size: 1rem;
 }
 .blog-section .icons .icon-text{
@@ -373,8 +374,8 @@ section{
     font-size: 1.2rem;
     margin-bottom:1.5rem
 }
-.blog-section:hover{
-    
+.blog-section:hover img{
+    transform: scale(1.1);
 }
 
 
