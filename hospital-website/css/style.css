@@ -322,9 +322,18 @@ section{
     padding: 2rem;
 }
 #reviews-section .review .review-img-section img{
-    width: 30%;
-    border: solid #fff 1rem;
+    width: 30%; 
+    border: solid #fff 0.5rem;
     border-radius: 50%;
+}
+#reviews-section .review p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 3rem;
+    line-height: 1.8;
+}
+#reviews{
+    margin-top: 2rem;
 }
 
 
