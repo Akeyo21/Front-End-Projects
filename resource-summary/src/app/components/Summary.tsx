@@ -29,7 +29,7 @@ const Summary = ({text, Icon, color, summaryAmount}:props) => {
       </Box>
 
       <Box sx={{display: 'flex', fontWeight: 800}}>
-        <Typography sx={{fontWeight: 800}}>{summaryAmount}</Typography>
+        <Typography sx={{fontWeight: 800}}>{summaryAmount} &nbsp;</Typography>
 
         <Typography sx={{fontWeight: 800, opacity: 0.3}}>/ 100</Typography>
       </Box>
