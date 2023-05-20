@@ -3,4 +3,9 @@ This is a front end component that attempts to replicate the Summary Feature cha
 
 ## The created component
 
-[The created component is as follows for the desktop view: ](assets/images/desktop-view.png)
+![The created component is as follows for the desktop view:](/assets/images/desktop-view.png)
+
+
+## Replicated component design
+
+![The replicated component design is as follows for the desktop view:](/assets/images/desktop-design.jpg)
