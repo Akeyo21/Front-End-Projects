@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.1",
     "@types/node": "20.2.1",
     "@types/react": "18.2.6",
@@ -21,5 +22,56 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "jsxBracketSameLine": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "avoid"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ],
+    "plugins": [
+      "prettier",
+      "import"
+    ],
+    "ignorePatterns": [
+      "node_modules/",
+      "build/"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error"
+      ],
+      "no-console": "off",
+      "import/no-unresolved": "error",
+      "import/named": "error"
+    },
+    "settings": {
+      "import/extensions": [
+        ".js",
+        ".jsx"
+      ],
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ],
+          "paths": [
+            "src"
+          ]
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
   }
 }

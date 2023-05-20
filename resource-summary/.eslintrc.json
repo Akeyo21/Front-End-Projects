@@ -1,3 +1,58 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+    "plugins": [
+      "prettier",
+      "import"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": [
+            "src"
+          ],
+          "extensions": [".js", ".ts"]
+        }
+      }
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error"
+      ],
+      "no-console": "off",
+      "import/no-unresolved": "error",
+      "import/named": "error"
+    },
+    "ignorePatterns": [".eslintrc"],
+    "root": true,
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "overrides": [
+      {
+        "parser": "@typescript-eslint/parser",
+        "parserOptions": {
+          "project": "tsconfig.json",
+          "sourceType": "module"
+        },
+        "plugins": ["@typescript-eslint/eslint-plugin"],
+        "extends": [
+          "plugin:@typescript-eslint/recommended",
+          "plugin:prettier/recommended"
+        ],
+        "rules": {
+          "@typescript-eslint/interface-name-prefix": "off",
+          "@typescript-eslint/explicit-function-return-type": "off",
+          "@typescript-eslint/explicit-module-boundary-types": "off",
+          "@typescript-eslint/no-explicit-any": "off",
+          "@typescript-eslint/no-unused-vars": "error"
+        },
+        "files": ["*.tsx"]
+      }
+    ]
+
 }
